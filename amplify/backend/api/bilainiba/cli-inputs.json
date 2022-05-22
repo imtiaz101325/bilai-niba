@@ -3,11 +3,17 @@
   "serviceConfiguration": {
     "apiName": "bilainiba",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/Users/imtiaz101325/code/bilai-niba/amplify/backend/api/bilainiba/schema.graphql",
+    "gqlSchemaPath": "/tmp/amplify-6238f5f9-e015-4e52-b71e-bcf602a0c0e0/amplify/backend/api/bilainiba/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "expirationTime": 7
+      "keyDescription": "api key description",
+      "expirationTime": 30
     },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      }
+    ],
     "conflictResolution": {
       "defaultResolutionStrategy": {
         "type": "AUTOMERGE"
