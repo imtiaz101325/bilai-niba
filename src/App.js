@@ -2,7 +2,7 @@ import { Authenticator } from "@aws-amplify/ui-react";
 
 // import RequireAuth from "./RequireAuth";
 import Login from "./Login";
-import Home from "./Home";
+import Landing from "./Landing";
 import Layout from "./Layout";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -13,7 +13,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
+            <Route index element={<Landing />} />
             <Route path="/login" element={<Login />} />
           </Route>
         </Routes>

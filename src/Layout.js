@@ -1,8 +1,8 @@
 // components/Layout.js
 import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { useAuthenticator, Button, Heading, View } from "@aws-amplify/ui-react";
-import { Container, Typography } from "@mui/material";
+import { useAuthenticator, Button } from "@aws-amplify/ui-react";
+import { Container } from "@mui/material";
 import { styled } from '@mui/material/styles';
 
 import background from "./background.jpg";
@@ -27,6 +27,7 @@ export default function Layout() {
     signOut();
     navigate("/login");
   }
+
   return (
     <LayoutContainer>
       <nav>
@@ -37,14 +38,6 @@ export default function Layout() {
           <Button onClick={() => logOut()}>Logout</Button>
         )}
       </nav>
-      <Typography variant="h1" component="div" gutterBottom>
-        বিলাই নিবা?
-      </Typography>
-      <Heading level={1}>Example Auth Routes App</Heading>
-      <View>
-        {route === 'authenticated' ? 'You are logged in!' : 'Please Login!'}
-      </View>
-
       <Outlet />
     </LayoutContainer>
   );
