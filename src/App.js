@@ -1,9 +1,12 @@
+import { Container, Typography } from "@mui/material";
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <Container>
+      <Typography variant="h1" component="div" gutterBottom>
+        বিলাই নিবা?
+      </Typography>
+    </Container>
   );
 }
 
