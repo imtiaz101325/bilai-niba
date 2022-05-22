@@ -1,6 +1,6 @@
 // import { useAuthenticator } from "@aws-amplify/ui-react";
 import { AppBar, Button, Toolbar, Typography } from "@mui/material";
-import { Link, useMatch, useNavigate } from "react-router-dom";
+import { useMatch, useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 
 const Container = styled(AppBar)`
@@ -8,8 +8,14 @@ const Container = styled(AppBar)`
 `;
 
 function Logo() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/");
+  }
+
   return (
-    <Typography variant="h6" sx={{ flexGrow: 1 }} component={Link} to="/">
+    <Typography variant="h5" sx={{ flexGrow: 1 }} to="/" onClick={handleClick}>
       বিলাই নিবা?
     </Typography>
   );
