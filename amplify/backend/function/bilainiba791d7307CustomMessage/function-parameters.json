@@ -1,0 +1,26 @@
+{
+  "trigger": true,
+  "modules": [
+    "verification-link"
+  ],
+  "parentResource": "bilainiba791d7307",
+  "functionName": "bilainiba791d7307CustomMessage",
+  "resourceName": "bilainiba791d7307CustomMessage",
+  "parentStack": "auth",
+  "triggerEnvs": [
+    {
+      "key": "RESOURCENAME",
+      "value": "resourceName"
+    }
+  ],
+  "triggerDir": "/snapshot/repo/build/node_modules/@aws-amplify/amplify-category-auth/provider-utils/awscloudformation/triggers/CustomMessage",
+  "triggerTemplate": "CustomMessage.json.ejs",
+  "triggerEventPath": "CustomMessage.event.json",
+  "roleName": "bilainiba791d7307CustomMessage",
+  "skipEdit": true,
+  "REDIRECTURL": "https://bilai-niba.com/create-account/",
+  "EMAILSUBJECT": "Bilai needs confirm",
+  "EMAILMESSAGE": "Please confirm your email MEOW",
+  "RESOURCENAME": "resourceName",
+  "enableCors": false
+}

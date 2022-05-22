@@ -9,7 +9,22 @@
       "UnauthRoleName": "amplify-bilainiba-dev-31525-unauthRole",
       "StackName": "amplify-bilainiba-dev-31525",
       "StackId": "arn:aws:cloudformation:ap-southeast-1:338251678403:stack/amplify-bilainiba-dev-31525/adde11b0-d96c-11ec-9152-0693c7c68d22",
-      "AmplifyAppId": "diiyno9oi11ec"
+      "AmplifyAppId": "diiyno9oi11ec",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-bilainiba-dev-31525-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "bilainiba791d7307": {}
+      },
+      "function": {
+        "bilainiba791d7307CustomMessage": {
+          "REDIRECTURL": "https://bilai-niba.com/create-account/",
+          "EMAILSUBJECT": "Bilai needs confirm",
+          "EMAILMESSAGE": "Please confirm your email MEOW",
+          "deploymentBucketName": "amplify-bilainiba-dev-31525-deployment",
+          "s3Key": "amplify-builds/bilainiba791d7307CustomMessage-35797941364762375950-build.zip"
+        }
+      }
     }
   }
 }
