@@ -1,13 +1,23 @@
-import { Container, Typography } from "@mui/material";
+import { Authenticator } from "@aws-amplify/ui-react";
 
-function App() {
+// import RequireAuth from "./RequireAuth";
+import Login from "./Login";
+import Home from "./Home";
+import Layout from "./Layout";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+export default function App() {
   return (
-    <Container>
-      <Typography variant="h1" component="div" gutterBottom>
-        বিলাই নিবা?
-      </Typography>
-    </Container>
+    <Authenticator.Provider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/login" element={<Login />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Authenticator.Provider>
   );
 }
-
-export default App;
